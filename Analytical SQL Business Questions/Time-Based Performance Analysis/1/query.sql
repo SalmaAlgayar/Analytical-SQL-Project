@@ -1,3 +1,5 @@
+-- Produce cumulative revenue over time to understand long-term growth behavior
+
 WITH daily_revenue AS (
     SELECT 
         d.full_date,
