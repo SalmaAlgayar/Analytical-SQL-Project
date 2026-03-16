@@ -1,3 +1,5 @@
+-- Measure Month-to-Date performance to evaluate intra-month trends
+
 WITH daily_revenue AS (
     SELECT 
         d.full_date,
