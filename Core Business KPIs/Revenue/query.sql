@@ -3,7 +3,7 @@
 -- We chose a period from '2022-11-04' to '2022-11-09
 
 SELECT 
-    SUM(f.net_amount) AS total_revenue
+    SUM(f.unit_price * f.quantity) AS total_revenue
 FROM Fact_Order_Line f
 JOIN Dim_Date d ON f.date_key = d.date_key
 WHERE d.full_date BETWEEN DATE '2022-11-04' AND DATE '2022-11-09';
